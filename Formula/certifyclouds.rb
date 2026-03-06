@@ -7,6 +7,7 @@ class Certifyclouds < Formula
   sha256 "8bd7c1f6725a42e7247f9cdb3bc9f818cbcccb2e686635ad4ddd2e61463069c5"
   license "Apache-2.0"
 
+  depends_on "cryptography"
   depends_on "python@3.13"
 
   resource "azure-core" do
@@ -67,11 +68,6 @@ class Certifyclouds < Formula
   resource "click" do
     url "https://files.pythonhosted.org/packages/3d/fa/656b739db8587d7b5dfa22e22ed02566950fbfbcdc20311993483657a5c0/click-8.3.1.tar.gz"
     sha256 "12ff4785d337a1bb490bb7e9c2b1ee5da3112e94a8622f26a6c77f5d2fc6842a"
-  end
-
-  resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/60/04/ee2a9e8542e4fa2773b81771ff8349ff19cdd56b7258a0cc442639052edb/cryptography-46.0.5.tar.gz"
-    sha256 "abace499247268e3757271b2f1e244b36b06f8515cf27c4d49468fc9eb16e93d"
   end
 
   resource "h11" do
