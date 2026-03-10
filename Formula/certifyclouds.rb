@@ -3,8 +3,8 @@ class Certifyclouds < Formula
 
   desc "Scan Azure Key Vaults for expiring secrets, certificates, and keys"
   homepage "https://certifyclouds.com/scanner"
-  url "https://files.pythonhosted.org/packages/5f/2a/c5228b434d0d9a96d14ebd61c94b5bebf1967cf15c319fa1b4dca8e74137/certifyclouds-1.2.1.tar.gz"
-  sha256 "8bd7c1f6725a42e7247f9cdb3bc9f818cbcccb2e686635ad4ddd2e61463069c5"
+  url "https://files.pythonhosted.org/packages/ac/6b/4460616d24a950eb290728aff7f25e8e2f9ed9749f23a2a57def0c6dfccb/certifyclouds-1.2.2.tar.gz"
+  sha256 "b765b51ee07b23e37e8fb9bd470fb763ce69f33bc9118904ecf228bb592e921f"
   license "Apache-2.0"
 
   depends_on "cryptography"
