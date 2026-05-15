@@ -3,8 +3,8 @@ class Certifyclouds < Formula
 
   desc "Scan Azure Key Vaults for expiring secrets, certificates, and keys"
   homepage "https://certifyclouds.com/scanner"
-  url "https://files.pythonhosted.org/packages/4d/5f/5607759be02f8d7997817990bf4a781e3600a78396b56b87f1e0c2af458f/certifyclouds-1.3.3.tar.gz"
-  sha256 "6140ab5dfa9d86e426df7442bfbb75cae9e77f603468fc5a6ef17dc07d762476"
+  url "https://files.pythonhosted.org/packages/a9/68/066214fa3514156032a6cdd9ff1cf2dde86a779fa15af5fcf033041307d5/certifyclouds-1.3.4.tar.gz"
+  sha256 "e44d5c915e44a0c3bc4e1a917722f4bd1099435cc525248ad4b69b3a33ca1231"
   license "Apache-2.0"
 
   depends_on "cryptography"
@@ -48,6 +48,11 @@ class Certifyclouds < Formula
   resource "azure-mgmt-keyvault" do
     url "https://files.pythonhosted.org/packages/df/dd/e74f82797ee3ff7001832427a218f3079e6174b9fa8b354b84434172d89d/azure_mgmt_keyvault-14.0.1.tar.gz"
     sha256 "d141a8084ae4c7c5bd1cafeca49a8f3fbebc58dc5bc5290f322ea73d8b307ef7"
+  end
+
+  resource "azure-mgmt-subscription" do
+    url "https://files.pythonhosted.org/packages/84/67/14b19a006e13d86f05ee59faf78c39dc443d4fd6967344e9c94f688949c1/azure-mgmt-subscription-3.1.1.zip"
+    sha256 "4e255b4ce9b924357bb8c5009b3c88a2014d3203b2495e2256fa027bf84e800e"
   end
 
   resource "azure-mgmt-resource" do
