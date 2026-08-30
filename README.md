@@ -1,11 +1,11 @@
-# Homebrew Tap — CertifyClouds Scanner
+# CertifyClouds Scanner Homebrew Tap
 
 Scan Azure Key Vaults for expiring secrets, certificates, and keys.
 
 ## Install
 
 ```bash
-brew tap hus/certifyclouds https://codeberg.org/hus/homebrew-certifyclouds.git
+brew tap certifyclouds/certifyclouds
 brew install certifyclouds
 ```
 
