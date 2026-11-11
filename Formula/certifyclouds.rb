@@ -3,16 +3,16 @@ class Certifyclouds < Formula
 
   desc "Scan Azure Key Vaults for expiring secrets, certificates, and keys"
   homepage "https://certifyclouds.com/scanner"
-  url "https://files.pythonhosted.org/packages/1f/a4/bf92f7c7066edb78d57e3da8fd3c2006e8711e7908ecc210e3b108c0be78/certifyclouds-1.3.9.tar.gz"
-  sha256 "eeb655f620fd68e23602801a0209caa0a9cd27f9eed9d145afaf21482e58c975"
+  url "https://files.pythonhosted.org/packages/7d/1c/97f44769c7cc20c68797e418cea680ee09dee91be7c57bb6cb5a3629dbd9/certifyclouds-1.4.0.tar.gz"
+  sha256 "6153893278e66f0cdbf155ec7f95a1308b1dd5e62fd311deb802f226635c87f7"
   license "Apache-2.0"
 
   depends_on "cryptography"
   depends_on "python@3.13"
 
   resource "anyio" do
-    url "https://files.pythonhosted.org/packages/61/cc/a381afa6efea9f496eff839d4a6a1aed3bfafc7b3ab4b0d1b243a12573dd/anyio-4.14.2.tar.gz"
-    sha256 "cfa139f3ed1a23ee8f88a145ddb5ac7605b8bbfd8592baacd7ce3d8bb4313c7f"
+    url "https://files.pythonhosted.org/packages/a1/98/7e457a3b014976887a050561955c0b76e1e7e2d6e27b78ecef2ef80518f2/anyio-4.16.0.tar.gz"
+    sha256 "59bb03251907983d1603d27c3087ddb1e93299ea2163adcdba37899a4fb12ffb"
   end
 
   resource "azure-core" do
@@ -21,23 +21,23 @@ class Certifyclouds < Formula
   end
 
   resource "azure-identity" do
-    url "https://files.pythonhosted.org/packages/c5/0e/3a63efb48aa4a5ae2cfca61ee152fbcb668092134d3eb8bfda472dd5c617/azure_identity-1.25.3.tar.gz"
-    sha256 "ab23c0d63015f50b630ef6c6cf395e7262f439ce06e5d07a64e874c724f8d9e6"
+    url "https://files.pythonhosted.org/packages/cf/33/0b881d0093d64c965bb20fcf71b806c7097881b544a2a55d519cdcf3bab9/azure_identity-1.27.0.tar.gz"
+    sha256 "6a4c50e25e8e9a47b324a95ad024897e56cb3c6241e0094e93b126a2bf71edc5"
   end
 
   resource "azure-keyvault-certificates" do
-    url "https://files.pythonhosted.org/packages/86/95/dd5212834585d0fd72c89118e86dfe1aa332f815ac27464196649e212438/azure_keyvault_certificates-4.11.2.tar.gz"
-    sha256 "1fbc1df1ae1b9b5b49a5b5915f826ec0b1662ecfee909cc757ad35208398bfbd"
+    url "https://files.pythonhosted.org/packages/88/68/ef38756d4a2fba3e71501bba422562b2a3a4a352b50869448b47c55e67fc/azure_keyvault_certificates-4.12.0.tar.gz"
+    sha256 "ec5589c28889dce360d3ff9e9ec419db0fac4e127be1580f8a4a8e87384da4ea"
   end
 
   resource "azure-keyvault-keys" do
-    url "https://files.pythonhosted.org/packages/3d/97/2881414bdb1c9885c2e2195364b726d0ea3a2ef8a01c99e71238fc72b3b8/azure_keyvault_keys-4.11.2.tar.gz"
-    sha256 "8459c86542d103f8b67acb845fae5168029b6f7eb0fd7678ed8628c7b928addf"
+    url "https://files.pythonhosted.org/packages/6e/d4/e0ba8e8d661fcb2f536e1ba572369053aa37e3bc5c0bdb9aaab6603248ab/azure_keyvault_keys-4.11.3.tar.gz"
+    sha256 "abe258a46937ab69b148d1832150192f6a300578451d69304a0c3be24b9881aa"
   end
 
   resource "azure-keyvault-secrets" do
-    url "https://files.pythonhosted.org/packages/15/d5/41043abed42ca3ab6930c52a25956a8eb468af2db0acb5ce446ff5437ddc/azure_keyvault_secrets-4.11.2.tar.gz"
-    sha256 "c0d86db01a8ae34d1db92ec6b9ef92d9a2aef7fbb1a67c0956513d46b85d7adb"
+    url "https://files.pythonhosted.org/packages/39/24/ef81175436814f088cb1b9c4252f580f1c29e8ae1ca7d01cce7f9f6c3b7a/azure_keyvault_secrets-4.12.0.tar.gz"
+    sha256 "435ea0abb5280baaad9553da7a19e73e1b581048783b852210352bfcb0316aff"
   end
 
   resource "azure-mgmt-core" do
@@ -46,8 +46,8 @@ class Certifyclouds < Formula
   end
 
   resource "azure-mgmt-keyvault" do
-    url "https://files.pythonhosted.org/packages/df/dd/e74f82797ee3ff7001832427a218f3079e6174b9fa8b354b84434172d89d/azure_mgmt_keyvault-14.0.1.tar.gz"
-    sha256 "d141a8084ae4c7c5bd1cafeca49a8f3fbebc58dc5bc5290f322ea73d8b307ef7"
+    url "https://files.pythonhosted.org/packages/72/d7/9b72ab97a5a1faddf9c13659fb1f39cb82a2423879f57968b4ed8c237b58/azure_mgmt_keyvault-14.1.0.tar.gz"
+    sha256 "d27d412e6d7b5b76bfc7a8267b8e3d30852c7c6dc560609ec7d93d4816bd29fc"
   end
 
   resource "azure-mgmt-resource-subscriptions" do
@@ -56,8 +56,8 @@ class Certifyclouds < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz"
-    sha256 "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
+    url "https://files.pythonhosted.org/packages/fd/11/b524cbd9bbdaca58608e4cf4053fd463417549e1959fa8d3aa18319f9555/certifi-2026.10.23.tar.gz"
+    sha256 "a9895e6e2758b371e0545e321a3a8fd1fcfd9829ada8824a936dfb16aaaf36cd"
   end
 
   resource "cffi" do
@@ -66,13 +66,13 @@ class Certifyclouds < Formula
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/e5/3f/143b048436775b0f76ac3eec145c019e8173ccc2885c8f20319b996d5e83/charset_normalizer-3.5.1.tar.gz"
-    sha256 "6117b84ea48435e5356dc737f5121485c30920ba43375fa7b434fd753df0eac3"
+    url "https://files.pythonhosted.org/packages/33/1c/f41d4e74c28ab327ff3acd36053f7ea506c55872d7a90b0fa71aa3ab0c89/charset_normalizer-3.5.2.tar.gz"
+    sha256 "39de2a259fc954455c57274dc94c79d5842774e1247a016aff30bc0efed0f4ef"
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/c7/0e/7fa0ef50764b67090eca4114772a2abf8b6148198475e54c660b97caeee6/click-8.5.0.tar.gz"
-    sha256 "ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34"
+    url "https://files.pythonhosted.org/packages/45/37/edbf1b0707709013c0cf2e8317e03d97ed29bf4cac709fe328904ae92a38/click-8.5.1.tar.gz"
+    sha256 "9bbfada76703fd1d784b83eea012e3e8c6a001a876543ef104fa56aaaeb072b4"
   end
 
   resource "h11" do
@@ -91,8 +91,8 @@ class Certifyclouds < Formula
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/5f/f7/abb373e5757eaec4b922b92f97ec8d6d7e057cf06778247604fbc4e7c3f3/idna-3.19.tar.gz"
-    sha256 "5e0811a4383b21dc5838069f801c4fb62113b7447663d2530d2bd6e77b49bf15"
+    url "https://files.pythonhosted.org/packages/f5/08/8eea9d4b8302028f3abb2c0813953f7aec26d33b7a8960ed760e65ff29fa/idna-3.20.tar.gz"
+    sha256 "a7db850025b95ded1eae8a46181a1a6c56c92c96f0e2b005d9ff8dc0210cab44"
   end
 
   resource "isodate" do
@@ -101,8 +101,8 @@ class Certifyclouds < Formula
   end
 
   resource "markdown-it-py" do
-    url "https://files.pythonhosted.org/packages/06/ff/7841249c247aa650a76b9ee4bbaeae59370dc8bfd2f6c01f3630c35eb134/markdown_it_py-4.2.0.tar.gz"
-    sha256 "04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49"
+    url "https://files.pythonhosted.org/packages/16/fc/cee2c45553c9a9bf77d8b0c391560c556d7ed756b1f0bb35eb5d48db09ea/markdown_it_py-4.3.0.tar.gz"
+    sha256 "91a58fa5b72c71a40cf7177250fd767480d7a2bb3ac426ccfb76fb90305fdaaa"
   end
 
   resource "mdurl" do
@@ -111,8 +111,8 @@ class Certifyclouds < Formula
   end
 
   resource "msal" do
-    url "https://files.pythonhosted.org/packages/b8/1f/10f9d47a63d3a2e61b2c43e15bee6b95682aab827018f9a1b97a80787e25/msal-1.38.0.tar.gz"
-    sha256 "4f10ff1257bacfd1781f22e85bd2b8d43ad1b490f3b6aafd7906671cadedd464"
+    url "https://files.pythonhosted.org/packages/bb/85/747d28986a44b715cc51cf57aa021c8fd94e9614064261ceec77320e8b0b/msal-1.39.0.tar.gz"
+    sha256 "6ab7de335e6d7f5717e2c7e1dbf86e4dda2f6acf3c56773b78dc53ebc6395b5f"
   end
 
   resource "msal-extensions" do
@@ -121,8 +121,8 @@ class Certifyclouds < Formula
   end
 
   resource "pycparser" do
-    url "https://files.pythonhosted.org/packages/1b/7d/92392ff7815c21062bea51aa7b87d45576f649f16458d78b7cf94b9ab2e6/pycparser-3.0.tar.gz"
-    sha256 "600f49d217304a5902ac3c37e1281c9fe94e4d0489de643a9504c5cdfdfc6b29"
+    url "https://files.pythonhosted.org/packages/cb/27/eeb9f307bf07060f3d9f9aa0fb8c15b01bdfded0a941e4b2719c7f94cacd/pycparser-3.12.tar.gz"
+    sha256 "f03387877eab82ce01bbdfd0ba7252ee55a90b1c708d5129e2ce915475cf1db6"
   end
 
   resource "Pygments" do
@@ -131,8 +131,8 @@ class Certifyclouds < Formula
   end
 
   resource "PyJWT" do
-    url "https://files.pythonhosted.org/packages/3b/81/58d0ac84e1ef3a3843791d6954d94c0b33d526c75eeb1efbce9d0a4c4077/pyjwt-2.13.0.tar.gz"
-    sha256 "41571c89ca91598c79e8ef18a2d07367d4810fbbd6f637794879baf1b7703423"
+    url "https://files.pythonhosted.org/packages/43/ea/5194e52748b0da83d71e082d75496eaec6e58f419f5e184786ded517e6a9/pyjwt-2.15.1.tar.gz"
+    sha256 "4f259e80cdfb6b3fc18a7de51fd1ef9ec79652f25019bae68975ca2468a34df8"
   end
 
   resource "requests" do
@@ -146,8 +146,8 @@ class Certifyclouds < Formula
   end
 
   resource "tenacity" do
-    url "https://files.pythonhosted.org/packages/47/c6/ee486fd809e357697ee8a44d3d69222b344920433d3b6666ccd9b374630c/tenacity-9.1.4.tar.gz"
-    sha256 "adb31d4c263f2bd041081ab33b498309a57c77f9acf2db65aadf0898179cf93a"
+    url "https://files.pythonhosted.org/packages/82/9e/497c1c8ebe5a5b5d1d4a7511aea22c0bb1a97e3170d98abdef0e1b34265a/tenacity-9.2.1.tar.gz"
+    sha256 "a606b5c808d0cded4a359d5b9932d867ff2a6a6b64d37350260fd01bbdf83839"
   end
 
   resource "typing_extensions" do
@@ -156,8 +156,8 @@ class Certifyclouds < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/53/0c/06f8b233b8fd13b9e5ee11424ef85419ba0d8ba0b3138bf360be2ff56953/urllib3-2.7.0.tar.gz"
-    sha256 "231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c"
+    url "https://files.pythonhosted.org/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz"
+    sha256 "63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63"
   end
 
 
